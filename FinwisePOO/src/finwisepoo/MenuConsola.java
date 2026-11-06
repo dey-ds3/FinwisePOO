@@ -43,11 +43,11 @@ public class MenuConsola {
         int opcion = 0;
         if (scanner.hasNextInt()) {
             opcion = scanner.nextInt();
-            scanner.nextLine(); // IMPORTANTE: Limpia el salto de línea pendiente para que no afecte la siguiente lectura
+            scanner.nextLine();
         } else {
             System.out.println("Por favor, ingrese un número válido.");
-            scanner.next(); // Limpiar entrada incorrecta
-            scanner.nextLine(); // Limpiar búfer
+            scanner.next();
+            scanner.nextLine(); 
         }
         return opcion;
     }

@@ -1,10 +1,12 @@
 package finwisepoo;
 
+import java.util.ArrayList;
+
 public class GestorFinanciero {
-    private ArrayList<Double> ingresos;
-    private ArrayList<Double> gastos;
-    private ArrayList<String> categorias;
-    private ArrayList<MetaAhorro> metasAhorro;
+    private final ArrayList<Double> ingresos;
+    private final ArrayList<Double> gastos;
+    private final ArrayList<String> categorias;
+    private final ArrayList<MetaAhorro> metasAhorro;
 
     public GestorFinanciero() {
         this.ingresos = new ArrayList<>();
